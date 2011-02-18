@@ -1,0 +1,112 @@
+<style>
+#header{
+	text-align: center;
+}
+
+.header_text{
+	font-family: 'Ubuntu', arial, serif;
+	font-size: 11px;
+	color: #404041;
+	margin-right: 50px;
+	text-align: right;
+}
+
+#lid{
+	padding-top: 35px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.lid_text{
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-size: 35px;
+	color: #000000;
+}
+
+#body{
+	width: 1005px;
+	background-image: url(../images/sombra.png) no-repeat;
+	margin: auto;
+	text-align: center;
+    display: table;
+}
+
+#coruja{
+	width:200px;
+	float:left;
+	margin-left:250px;
+}
+
+#kaluana{
+	width:200px;
+	float:right;
+	margin-right:250px;
+}
+
+.product_description{
+	font-family: 'Ubuntu', arial, serif;
+	font-size: 11px;
+	color: #404041;
+}
+
+body p{
+	font-family: 'Ubuntu', arial, serif;
+	font-weight: bold;
+	font-size: 19px;
+	color: #404041;
+}
+
+#footer{
+	display: table;
+	margin: auto;
+	text-align: center;
+	padding-top: 35px;
+}
+
+</style>
+
+<div id="header">
+	<div class="header_text">
+		blog
+		&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;
+		desenvolvedores
+		&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;
+		log-in
+	</div>
+	<%= image_tag("logomarca_uana_horizontal.jpg", :alt=>"logomarca", :width=>"212", :height=>"94", :border=>"0")%>
+</div>
+
+<div id="lid">
+	<div class="lid_text">
+		produtos web que iluminarão a sua empresa
+	</div>
+</div>
+
+<div id="body">
+	<div id="coruja">
+		<%= image_tag("coruja.png", :alt=>"logo coruja", :width=>"113", :height=>"134", :border=>"0")%>
+		<p>CORUJA</p>
+		<span class="product_description">
+		 texto que descreve o produto de logística do karmonitor
+		</span>
+	</div>
+	<div id="kaluana">
+		<%= image_tag("kaluana.png", :alt=>"logo kaluana", :width=>"113", :height=>"134", :border=>"0")%>
+		<p>KALUANÁ</p>
+		<span class="product_description">
+		texto que descreve o produto de gestão do kaluaná
+		</span>
+	</div>
+</div>
+
+<div id="footer">
+	<div style="float:left; width:300px; margin-right:10px;">
+		<hr>
+	</div>
+	<div style="float:left; padding-bottom:10px;">
+		<%= image_tag("footer_center.jpg", :alt=>"logo kaluana", :width=>"17", :height=>"18", :border=>"0")%>
+	</div>
+	<div style="float:left; width:300px; margin-left:10px;">
+		<hr>
+	</div>
+</div>
